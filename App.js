@@ -18,11 +18,9 @@ const store = configureStore()
 export default class App extends Component {
   render() {
     return (
-      //<Provider store={store}>
-        <View style={{flex:1,backgroundColor:'black'}}>
-          <Text>sdf</Text>
-        </View>
-      //</Provider>
+      <Provider store={store}>
+        <Navigator/>
+      </Provider>
 
     );
   }
