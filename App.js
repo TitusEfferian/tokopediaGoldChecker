@@ -14,11 +14,16 @@ import configureStore from './src/configureStore';
 import Navigator from './src/activity/Navigator'
 
 
-//const store = configureStore()
+const store = configureStore()
 export default class App extends Component {
   render() {
     return (
-        <Navigator/>
+      //<Provider store={store}>
+        <View style={{flex:1,backgroundColor:'black'}}>
+          <Text>sdf</Text>
+        </View>
+      //</Provider>
+
     );
   }
 }
