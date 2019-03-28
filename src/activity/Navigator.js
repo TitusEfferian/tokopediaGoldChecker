@@ -1,8 +1,8 @@
-import { createStackNavigator } from 'react-navigation';
-import MainActivity from './MainActivity'
+import { createStackNavigator, createTabNavigator } from 'react-navigation';
+import TabNavigator from './TabNavigator';
 
 export default createStackNavigator({
-    MainActivity: {
-        screen: MainActivity
-    },
+    TabNavigator: {
+        screen: TabNavigator
+    }
 });
